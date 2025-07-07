@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cibo di qualità per cani - BauGourmet offre prodotti naturali e una consulenza gratuita su misura per il tuo cane.">
+  <title>BauGourmet - Cibo di Qualità per Cani</title>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-green-600">BauGourmet</h1>
+    <nav>
+      <a href="#prodotti" class="mx-2 text-sm font-medium text-gray-600 hover:text-green-600">Prodotti</a>
+      <a href="#consulenza" class="mx-2 text-sm font-medium text-gray-600 hover:text-green-600">Consulenza Gratuita</a>
+    </nav>
+  </header>
+
+  <section class="bg-green-100 text-center py-12">
+    <h2 class="text-3xl font-bold text-green-800">Cibo Naturale e Salutare per il Tuo Cane</h2>
+    <p class="mt-4 text-lg text-gray-700">Ingredienti selezionati, senza conservanti. Amore a ogni morso.</p>
+    <a href="#prodotti" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Scopri i Prodotti</a>
+  </section>
+
+  <section id="prodotti" class="py-12 px-6">
+    <h3 class="text-2xl font-semibold text-center mb-6">I nostri Bestseller</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white shadow rounded p-4">
+        <img src="https://files.oaiusercontent.com/file-R3tbmTt4z4857T8yCAdKxT?se=2025-07-08T23%3A00%3A00Z&sp=r&sv=2021-08-06&sr=b&sig=X" alt="Crocchette pollo bio" class="w-full h-48 object-cover rounded">
+        <h4 class="text-lg font-bold mt-2">Crocchette Bio al Pollo</h4>
+        <p class="text-gray-500">Ricetta bilanciata con ingredienti biologici. 2kg - €19,90</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Aggiungi al carrello</button>
+      </div>
+      <div class="bg-white shadow rounded p-4">
+        <img src="https://files.oaiusercontent.com/file-1dUN8vU8L51Z5AK7RBxuvP?se=2025-07-08T23%3A00%3A00Z&sp=r&sv=2021-08-06&sr=b&sig=X" alt="Snack naturali" class="w-full h-48 object-cover rounded">
+        <h4 class="text-lg font-bold mt-2">Snack Naturali Masticabili</h4>
+        <p class="text-gray-500">100% naturali, ideali per l’igiene orale. Confezione - €9,90</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Aggiungi al carrello</button>
+      </div>
+      <div class="bg-white shadow rounded p-4">
+        <img src="https://files.oaiusercontent.com/file-CMjj94hiRi9qaQvkAWzwXA?se=2025-07-08T23%3A00%3A00Z&sp=r&sv=2021-08-06&sr=b&sig=X" alt="Pasto fresco" class="w-full h-48 object-cover rounded">
+        <h4 class="text-lg font-bold mt-2">Pasto Fresco Manzo & Zucca</h4>
+        <p class="text-gray-500">Preparato fresco, perfetto per cani sensibili. 500g - €6,90</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Aggiungi al carrello</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="consulenza" class="py-12 px-6 bg-white">
+    <h3 class="text-2xl font-semibold text-center mb-6">Richiedi una Consulenza Gratuita</h3>
+    <form class="max-w-xl mx-auto bg-gray-100 p-6 rounded shadow space-y-4" action="#" method="post">
+      <label class="block">
+        <span class="text-gray-700">Nome del proprietario</span>
+        <input type="text" name="nome" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" required />
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Email</span>
+        <input type="email" name="email" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" required />
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Nome del cane</span>
+        <input type="text" name="nome_cane" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Età del cane</span>
+        <input type="number" name="eta_cane" min="0" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Peso del cane (kg)</span>
+        <input type="number" name="peso_cane" step="0.1" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Razza</span>
+        <input type="text" name="razza" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Il tuo cane ha intolleranze o patologie?</span>
+        <textarea name="note_salute" rows="3" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2"></textarea>
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Tipo di alimentazione attuale</span>
+        <select name="alimentazione_attuale" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2">
+          <option value="">Seleziona</option>
+          <option value="crocchette">Crocchette</option>
+          <option value="umido">Umido</option>
+          <option value="casalinga">Casalinga</option>
+          <option value="barf">BARF</option>
+          <option value="altro">Altro</option>
+        </select>
+      </label>
+      <label class="block">
+        <span class="text-gray-700">Obiettivo dell'alimentazione</span>
+        <textarea name="obiettivo" rows="3" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" placeholder="Es: perdere peso, migliorare digestione..."></textarea>
+      </label>
+      <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 w-full">Invia Richiesta</button>
+    </form>
+  </section>
+
+  <footer class="bg-green-100 text-center text-sm text-gray-600 py-4">
+    © 2025 BauGourmet - Tutti i diritti riservati
+  </footer>
+</body>
+</html>
