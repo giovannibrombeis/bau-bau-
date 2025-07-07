@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cibo di qualità per cani - BauGourmet offre prodotti naturali e una consulenza gratuita su misura per il tuo cane.">
+  <title>BauGourmet - Cibo di Qualità per Cani</title>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-green-600">BauGourmet</h1>
+    <nav>
+      <a href="#prodotti" class="mx-2 text-sm font-medium text-gray-600 hover:text-green-600">Prodotti</a>
+      <a href="#consulenza" class="mx-2 text-sm font-medium text-gray-600 hover:text-green-600">Consulenza Gratuita</a>
+    </nav>
+  </header>
+
+  <section class="bg-green-100 text-center py-12">
+    <h2 class="text-3xl font-bold text-green-800">Cibo Naturale e Salutare per il Tuo Cane</h2>
+    <p class="mt-4 text-lg text-gray-700">Ingredienti selezionati, senza conservanti. Amore a ogni morso.</p>
+    <a href="#prodotti" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Scopri i Prodotti</a>
+  </section>
+
+  <section id="prodotti" class="py-12 px-6">
+    <h3 class="text-2xl font-semibold text-center mb-6">I nostri Bestseller</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white shadow rounded p-4">
+        <img src="https://images.unsplash.com/photo-1619983081563-430f636027a3?auto=format&fit=crop&w=600" alt="Crocchette pollo bio" class="w-full h-48 object-cover rounded">
+        <h4 class="text-lg font-bold mt-2">Crocchette Bio al Pollo</h4>
+        <p class="text-gray-500">Ricetta bilanciata con ingredienti biologici. 2kg - €19,90</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600" id="add-product-1">Aggiungi al carrello</button>
+      </div>
+      <div class="bg-white shadow rounded p-4">
+        <img src="https://images.unsplash.com/photo-1604908177225-04e9d96eaf30?auto=format&fit=crop&w=600" alt="Snack naturali" class="w-full h-48 object-cover rounded">
+        <h4 class="text-lg font-bold mt-2">Snack Naturali Masticabili</h4>
+        <p class="text-gray-500">100% naturali, ideali per l’igiene orale. Confezione - €9,90</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600" id="add-product-2">Aggiungi al carrello</button>
+      </div>
+      <div class="bg-white shadow rounded p-4">
+        <img src="https://images.unsplash.com/photo-1583337130417-3346a1c30c50?auto=format&fit=crop&w=600" alt="Pasto fresco" class="w-full h-48 object-cover rounded">
+        <h4 class="text-lg font-bold mt-2">Pasto Fresco Manzo & Zucca</h4>
+        <p class="text-gray-500">Preparato fresco, perfetto per cani sensibili. 500g - €6,90</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600" id="add-product-3">Aggiungi al carrello</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="consulenza" class="py-12 px-6 bg-white">
+    <h3 class="text-2xl font-semibold text-center mb-6">Richiedi una Consulenza Gratuita</h3>
+    <form class="max-w-xl mx-auto bg-gray-100 p-6 rounded shadow" action="#" method="post">
+      <label class="block mb-4">
+        <span class="text-gray-700">Nome</span>
+        <input type="text" name="nome" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" required>
+      </label>
+      <label class="block mb-4">
+        <span class="text-gray-700">Email</span>
+        <input type="email" name="email" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" required>
+      </label>
+      <label class="block mb-4">
+        <span class="text-gray-700">Messaggio</span>
+        <textarea name="messaggio" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" rows="4" placeholder="Raccontaci del tuo cane e dei suoi bisogni" required></textarea>
+      </label>
+      <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Invia Richiesta</button>
+    </form>
+  </section>
+
+  <footer class="bg-green-100 text-center text-sm text-gray-600 py-4">
+    © 2025 BauGourmet - Tutti i diritti riservati
+  </footer>
+</body>
+</html>
